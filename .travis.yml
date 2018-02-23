@@ -15,5 +15,4 @@ install:
   - pip --version
 
 script:
-  # Run tests.
-  -  py.test -v -rs tests
+  - coverage run --source=namegender setup.py tests
